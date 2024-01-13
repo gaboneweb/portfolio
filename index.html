@@ -4,26 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bulelani Gabonewe's Portfolio</title>
+    <link rel="stylesheet" href="styles/about.css">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/nav.css">
+    <link rel="stylesheet" href="styles/welcome.css">
 </head>
 <body>
-    <section id="about" class="about">
+    <nav class="navbar">
 
+        <div class="logo">
+            <button class="button-toogler">
+                <img class="menu-icon" src="icons/menu.svg" alt="Navigation menu">
+            </button>
+            <h3>
+                <a class="name info" style="font-size: 24px;" href="#">Bulelani Gabonewe</a>
+            </h3>
+        </div>
 
-    </section>
+        <div class="navbar-links">
+            <a class="navlink info" href="#">HOME</a>
+            <a class="navlink info" href="#about">ABOUT</a>
+            <a class="navlink info" href="#education">EDUCATION</a>
+            <a class="navlink info" href="#skills">SKILLS</a>
+            <a class="navlink info" href="#contact">CONTACT</a>
+        </div>
 
-    <section id="skills" class="skills">
-
-
-    </section>
-
-    <section class="projects">
-
+        <div class="navbar-links-dropdown">
+            <a class="navlink info" href="#">HOME</a>
+            <a class="navlink info" href="#about">ABOUT</a>
+            <a class="navlink info" href="#education">EDUCATION</a>
+            <a class="navlink info" href="#skills">SKILLS</a>
+            <a class="navlink info" href="#contact">CONTACT</a>
+        </div>
         
+    </nav>
+
+
+    <section id="welcome" class="welcome">
+        <h1 style="font-size: 100px; color: #66FCF1;">HELLO</h1>
+        <p></p>
     </section>
 
-    <footer>
 
-    </footer>
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <div class="about-sec">
+            <div>
+                <p style="margin: 0;">I am a student at WeThinkCode_, passionate about software development and experienced in Python and Java. I
+                    excel in teamwork, strive for clean code, and have a strong interest in code design.</p>
+            </div>
+            <div style="width: 50%;
+            flex: 1;">
+                <img class="img-about" src="images/15Bulelani Gabonewe bugabon022.jpg" alt="Bulelani's picture">
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+    <script src="scripts/nav.js"></script>
     
 </body>
 </html>
