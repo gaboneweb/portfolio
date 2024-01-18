@@ -3,13 +3,13 @@ nav {
     justify-content: space-between;
     background-color: rgb(11,12,16);
     align-items: center;
-    height: 45px;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     min-width: 265px;
     max-width: 100%;
+    max-height: 35px;
     z-index: 1000; /* Ensure the header is above other elements */
 }
 
@@ -32,7 +32,9 @@ nav {
 }
 
 .logo h3{
-    padding-top: 7px;
+    /* padding-top: 7px; */
+    display: flex;
+    align-items: center;
     height: 100%; 
     margin: 0; 
     flex: 1;
@@ -40,6 +42,7 @@ nav {
 
 .logo {
     text-align: center;
+    max-height: 35px;
 }
 
 .button-toogler {
@@ -92,6 +95,7 @@ nav {
         background-color:  rgb(11,12,16);
         transform: translateY(0);
         opacity: 1;
+        column-gap: 2px;
     }
 
     /* .navlink {
@@ -101,9 +105,15 @@ nav {
     .logo {
         position: absolute;
         display: flex;
+        justify-content: space-between;
         background-color:  rgb(11,12,16);
         width: 100%;
+        height: 35px;
         min-width: 256px;
+    }
+
+    .logo h3 {
+        padding-left: 30%;
     }
 }
 
