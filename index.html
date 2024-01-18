@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles/general.css">
     <link rel="stylesheet" href="styles/nav.css">
     <link rel="stylesheet" href="styles/welcome.css">
+    <link rel="stylesheet" href="styles/skills.css">
 </head>
 <body>
     <nav class="navbar">
@@ -24,16 +25,16 @@
         <div class="navbar-links">
             <a class="navlink info" href="#">HOME</a>
             <a class="navlink info" href="#about">ABOUT</a>
-            <a class="navlink info" href="#education">EDUCATION</a>
             <a class="navlink info" href="#skills">SKILLS</a>
+            <a class="navlink info" href="#projects">PROJECTS</a>
             <a class="navlink info" href="#contact">CONTACT</a>
         </div>
 
         <div class="navbar-links-dropdown">
             <a class="navlink info" href="#">HOME</a>
             <a class="navlink info" href="#about">ABOUT</a>
-            <a class="navlink info" href="#education">EDUCATION</a>
             <a class="navlink info" href="#skills">SKILLS</a>
+            <a class="navlink info" href="#projects">PROJECTS</a>
             <a class="navlink info" href="#contact">CONTACT</a>
         </div>
         
@@ -41,31 +42,67 @@
 
 
     <section id="welcome" class="welcome">
-        <h1 style="font-size: 100px; color: #66FCF1;">HELLO</h1>
-        <p></p>
-    </section>
+        <img class="img-welcome" style="border-radius: 500px ; height: 200px;width: 200px; object-fit: cover; object-position: 
+            
+        center; max-width: 100%;" src="images/15Bulelani Gabonewe bugabon022.jpg">
+        <div class="welcome-content">
+            <div class="greeting">
+                <p style="font-size: 45px; text-transform: uppercase ;">Hello, my name is <span class="name">Bulelani Gabonewe</span>.</p>
+                <p style="font-size: 20px; ">A Systems Development graduate from WeThinkCode_, fueled by a passion for creating innovative solutions and contributing to society.</p>
+            </div>
+
+        </div>
+    </section>  
 
 
     <section id="about" class="about">
-        <h2>About Me</h2>
-        <div class="about-sec">
-            <div>
-                <p style="margin: 0;">I am a student at WeThinkCode_, passionate about software development and experienced in Python and Java. I
-                    excel in teamwork, strive for clean code, and have a strong interest in code design.</p>
+        <h2 class="heading">About Me</h2>
+        <div class="about-content">
+            <div style="display: flex;width: 50% ;padding-top:10%; padding-right: 10px; justify-content: center; flex-shrink: 0;">
+                <img  class="img-about" src="images/252Bulelani Gabonewe bugabon022.jpg" alt="Bulelani's picture">
             </div>
-            <div style="width: 50%;
-            flex: 1;">
-                <img class="img-about" src="images/15Bulelani Gabonewe bugabon022.jpg" alt="Bulelani's picture">
+            <div class="about-paragraph">
+
+                <p  class="text" style="padding-top: 30px;">
+                    Hey, it's <strong style="color: inherit;">Bulelani Gabonewe</strong>! 
+                    I've just completed all the required coursework in the Systems Development program at WeThinkCode_ and am eagerly anticipating graduation. 
+                    I'm passionate about writing clean and efficient code, and I love collaborating with others to create innovative solutions.
+                     Continuous learning is a key part of my development approach.
+                </p>
+
+
+                <br>
+                <p  class="text">In terms of technical skills, I'm proficient in both Python and Java, having applied them to various projects 
+                    while at WeThinkCode_. I'm well-versed in Git, Test-Driven Development (TDD), and setting up Continuous Integration/Continuous Deployment (CI/CD) pipelines.
+                </p>
+
+
+                <br>
+                <p  class="text">
+                    Beyond coding, I find joy in reading web novels and manga.
+                    They not only entertain me but also teach important lessons about constant improvement and resilience, which I bring into my work.
+                </p>
+
+
+                <br>
+                <p  class="text">
+                    As I look forward to graduating, I'm excited to apply my skills to real-world challenges and contribute to the dynamic field of software development!
+                </p>
+                    
+                
             </div>
+
         </div>
 
     </section>
 
 
+    <section id="skills" class="skills">
+        <h2 class="heading">Skills</h2>
+    </section>
 
 
-
-
+    <!-- <section id="skills" class="skills"></section> -->
 
     <script src="scripts/nav.js"></script>
     
