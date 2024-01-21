@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="styles/welcome.css">
     <link rel="stylesheet" href="styles/skills.css">
     <link rel="stylesheet" href="styles/projects.css">
+    <link rel="stylesheet" href="styles/contact.css">
 </head>
 <body>
     <nav class="navbar">
@@ -184,15 +185,15 @@
                 <div class="project-img" style="width: 100%; flex-shrink: 0;">
                     <img src="images/space-invaders.jpg" alt="Space Invaders Image" style="width:100%;height: 300px; object-fit: cover; object-position: center;">
                 </div>
-                <div class="project-description" style="display: flex; justify-content: space-between; flex-direction: column;">
-                    <h3 style="padding-left:30%">Space Invaders Game</h3>
+                <div class="project-description" style="display: flex; justify-content: space-between; flex-direction: column; flex-shrink: 0;flex: 1;">
+                    <h3 style="text-align: center;">Space Invaders Game</h3>
                     <p>A fixed shooter game in which the player moves a laser cannon horizontally across the bottom of the screen and fires at aliens overhead</p>
                     <ul style="list-style: none;">
                         <li> &#9702; Game is build using Java and Java Swing</li>
                         <li> &#9702; A project I built to learn OOP concepts.
                     </ul>
                     
-                    <button class="project-link-button" style="width: fit-content;margin-left: 40%; background-color: #66FCF1;border: none; border-radius: 1px;">
+                    <button class="project-link-button" style="width: fit-content;background-color: #66FCF1;border: none; border-radius: 1px; margin: 0 auto;">
                         <a href="" target="_blank" style="padding: 7px;color: rgb(11,12,16);">GitHub Link</a>
                     </button>
                    
@@ -204,8 +205,8 @@
                 <div class="project-img" style="width: 100%; flex-shrink: 0;">
                     <img src="images/chat-image.jpg" alt="Space Invaders Image" style="width:100%;height: 300px; object-fit: cover; object-position: center;">
                 </div>
-                <div class="project-description" style="display: flex; justify-content: space-between; flex-direction: column;">
-                    <h3  style="padding-left:30%">Simple client-server chat system</h3>
+                <div class="project-description" style="display: flex; justify-content: space-between; flex-direction: column; flex-shrink: 0;">
+                    <h3  style="text-align: center;">Simple client-server chat system</h3>
                     <p>
                         A simple realtime multi-user chat cleint and server.My own attempt at the 
                         <a href="https://www.linkedin.com/pulse/coding-challenge-24-realtime-chat-client-server-john-crickett/" target="_blank">
@@ -216,38 +217,45 @@
                         <li> &#9702; The server is able to connect to multiple clients.</li>
                         <li> &#9702; A project I built to learn how Threads and Java netwroking
                     </ul>
-                    <button class="project-link-button" style="width: fit-content;margin-left: 40%; background-color: #66FCF1;border: none; border-radius: 1px;">
+                    <button class="project-link-button" style="width: fit-content;background-color: #66FCF1;border: none; border-radius: 1px; margin: 0 auto;">
                         <a href="" target="_blank" style="padding: 7px; color: rgb(11,12,16);">GitHub Link</a>
                     </button>
                 </div>
             </div>
 
         </div>
+        
+    </section>
 
 
-        <section id="contact" class="contact" style="background-color: #66FCF1;">
-            <h2 class="heading">Contant Me</h2>
+    <section id="contact" class="contact">
             <div class="contact-content">
                 <div class="my-contacts">
-                    
+                    <h3 class="heading">My Contact Details</h3>
+                    <div style="display: flex; align-items: center;">
+                        <img src="images/call.png" style="width: 35px;">
+                        <p>0825892233</p>
+                    </div>
+                    <div style="display: flex; align-items: center;">
+                        <img src="images/email.png" style="width: 35px;">
+                        <p>bulelanigabonewe@gmail.com</p>
+                    </div>
                 </div>
                 <div class="contact-me-container">
-
+                    <h3 class="heading">Get in touch</h3>
+                    <form class="contact-form">
+                        <input type="text" id="contact_text" placeholder="Enter Your Name">
+                        <input type="email" id="contact_email" placeholder="Enter Your Email">
+                        <!-- <textarea placeholder="Enter Your Message"></textarea> -->
+                        <textarea id="contact_message" placeholder="Enter Your Message"></textarea>
+                        <button type="submit" id="contact_submit" class="contact-submit">Submit</button>
+                    </form>
                 </div>
 
             </div>
 
 
         </section>
-
-
-        
-    </section>
-
-
-
-
-    <!-- <section id="skills" class="skills"></section> -->
 
     <script src="scripts/nav.js"></script>
     

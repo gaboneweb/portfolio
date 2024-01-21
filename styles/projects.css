@@ -24,7 +24,7 @@
     border-width: 2px; 
     border-color: grey; 
     flex-direction: column; 
-    justify-content: space-between; 
+    /* justify-content: space-between;  */
     width: 45%;
     flex-shrink: 0;
     border-radius: 3px;
