@@ -9,7 +9,7 @@ async function submitForm() {
     event.preventDefault();
     
     // Get form data
-    const name = document.getElementById('contact_text').value;
+    const name = document.getElementById('contact_name').value;
     
     const email = document.getElementById('contact_email').value;
     

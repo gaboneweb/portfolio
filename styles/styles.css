@@ -31,7 +31,7 @@ html{
 
 
 section {
-    padding-top :100px;
+    padding-top :135px;
     width: 100%;
 }
 
@@ -325,6 +325,7 @@ nav {
     flex-direction: column; 
     flex-shrink: 0;
     flex: 1;
+    row-gap: 5px;
 }
 
 
@@ -389,6 +390,7 @@ nav {
     background-color: var(--font-color-background-blue);; 
     padding-left: 10%; 
     padding-right:10% ;
+    padding-bottom: 10%;
 }
 
 
@@ -420,6 +422,37 @@ nav {
     display: flex; 
     flex-direction: column; 
     row-gap: 20px;
+}
+
+.form-element {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.form-element label {
+    color: var(--font-color-background-black);
+}
+
+
+.contact_email, .contact_name, .contact_message {
+    border-radius: 5px;
+    border: none;
+    font-size: var(--paragraph-font-normal);
+    color: var(--font-color-background-black);
+    padding: 10px 20px;
+    
+}
+
+.contact_submit {
+    padding: 15px 20px;
+    font-size: var(--font-color-background-black);
+    width: fit-content;
+    margin: 0 auto;
+    background-color: var(--font-color-background-black);
+    border: none;
+    border-radius: 5px;
+    
 }
 
 
