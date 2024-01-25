@@ -407,6 +407,8 @@ nav {
     display: flex; 
     flex-direction: column;
     justify-content: space-around;
+    padding-left: 20%;
+    padding-right: 20%;
 }
 
 .my-contacts{
