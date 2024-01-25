@@ -3,6 +3,7 @@
     /*Fonts sizes*/
     --paragraph-font-normal : 1.125rem ;
     --heading-font-inner : 30px;
+    --heading-font-small : 25px;
     --heading-font: 2.813rem;
 
     /*Font colors*/
@@ -407,8 +408,8 @@ nav {
     display: flex; 
     flex-direction: column;
     justify-content: space-around;
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .my-contacts{
@@ -554,5 +555,12 @@ nav {
     .contact-content{
         flex-direction: column;
         row-gap: 20px;
+    }
+}
+
+
+@media screen and (max-width: 430px){
+    .contacts-heading{
+        font-size: var(--heading-font-small);
     }
 }
