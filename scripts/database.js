@@ -1,12 +1,14 @@
+/**Initialise the supabase object */
+
 const supabaseUrl = 'https://wjhxceapxvjmgyjrochh.supabase.co';
 const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndqaHhjZWFweHZqbWd5anJvY2hoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDU4ODgzODUsImV4cCI6MjAyMTQ2NDM4NX0.idINLa_RApJYsqdIgYtWimO-DETD-nSRnrBt7Oth154';
 const _supabase = supabase.createClient(supabaseUrl, supabaseKey);
 
 // Function to submit the form data to Supabase
-async function submitForm() {
+async function submitForm(e) {
 
     //Prevent default form submision to give a chance for the data insertion to complete
-    event.preventDefault();
+    e.preventDefault();
     
     // Get form data
     const name = document.getElementById('contact_name').value;
@@ -19,7 +21,7 @@ async function submitForm() {
     const { data, error } = await _supabase
         .from('contacts')
         .insert(
-            { name:name, email:email, message:message },
+            { name: name, email: email, message: message },
         );
 
     if (error) {
