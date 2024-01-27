@@ -30,7 +30,7 @@ async function submitForm(e) {
         console.log('Data inserted successfully:', data);
         alert("Thank you!!!I will get back to you");
         //Reload page after successfull submision
-        location.reload();
+        document.getElementById("contact-form").reset();
     
         
     }
