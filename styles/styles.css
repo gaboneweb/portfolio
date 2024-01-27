@@ -2,7 +2,7 @@
 
     /*Fonts sizes*/
     --paragraph-font-normal : 1.125rem ;
-    --heading-font-inner : 30px;
+    --heading-font-inner : 25px;
     --heading-font-small : 25px;
     --heading-font: 2.813rem;
 
@@ -10,6 +10,9 @@
     --font-color-grey : #C5C6C7;
     --font-color-background-black : #0B0C10;
     --font-color-background-blue : #66FCF1;
+    /*Background secondary*/
+    --backgroun-primary : #202833;
+    --backgroun-secondary : #152335;
 }
 
 
@@ -46,7 +49,7 @@ section {
 body{
     max-width: 100%;
     overflow-x: hidden;
-    background-color: var(--font-color-background-black);
+    background-color: var(--backgroun-secondary);
     
 }
 
@@ -61,7 +64,7 @@ a {
 nav {
     display: flex;
     justify-content: space-between;
-    background-color: var(--font-color-background-black);
+    background-color: var(--backgroun-secondary);
     align-items: center;
     position: fixed;
     top: 0;
@@ -119,7 +122,6 @@ nav {
 .menu-icon {
     width: 100%;
     height: 35px;
-    /* min-width: 100%; */
     flex-shrink: 0;
 }
 
@@ -155,7 +157,7 @@ nav {
 
 /*--------------------------------------------Welcome section styles----------------------------------------------------------*/
 .welcome {
-    background-color: var(--font-color-background-black);
+    /* background-color: var(--backgroun-secondary); */
     
     min-height: 100vh;
     width: 100vw;
@@ -167,6 +169,7 @@ nav {
     padding-left: 20%;
     padding-right: 20%;
     padding-bottom: 10%;
+    row-gap: 30px;
 }
 
 
@@ -179,34 +182,70 @@ nav {
     text-align: center;
 }
 
+.social-links {
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+}
+.link-icons {
+    width: 40px;
+    height: 40px;
+    background-color: var(--font-color-background-blue);
+    border: solid;
+    border-color: var(--font-color-background-blue);
+    border-width: 1px;
+    border-radius: 20px;
+}
+
+
+.link-icons:hover {
+    opacity: 0.6;
+}
+
+.proj-button {
+    height: 45px;
+    width: 120px;
+    font-size: var(--paragraph-font-normal);
+    background-color: var(--font-color-background-blue);
+    border: none;
+    border-radius: 10px;
+}
+
+.project-link{
+    color: var(--font-color-background-black);
+    font-weight: bold;
+}
+
+.project-link:hover {
+    opacity: 0.6;
+}
+
+
+.nav-buttons {
+    display: flex;
+    justify-content: center;
+}
 
 /*---------------------------------------------About me  section styles---------------------------------------------------------*/
 .about {
     display: flex;
-    /* align-items: center; */
     flex-direction: column;
     justify-content: space-around;
     flex-shrink: 0;
-    background-color :var(--font-color-background-blue);
+    background-color :var(--backgroun-primary);
 }
 
 .about-content {
     display: flex;
-    /* align-items: center; */
     justify-content: space-between;
     flex-shrink: 0;
-    /* padding-left: 10%;
-    padding-right: 10%;
-    padding-bottom: 10%; */
     padding: 5% 10%;
     min-width: 300px;
-    /* text-align: center; */
 }
 
-.text , .heading ,.inner-heading{
-    color: var(--font-color-background-black);
+.heading{
+    color: var(--font-color-background-blue);
 }
-
 
 .inner-heading {
     text-align: center;
@@ -222,7 +261,6 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* align-items: center; */
     flex: 1;
     padding-left:5%;
     padding-right: 5%;
@@ -281,7 +319,7 @@ nav {
 }
 .skill-name {
     font-size: var(--paragraph-font-normal);
-    color: var(--font-color-background-black);
+    /* color: var(--font-color-background-black); */
 }
 
 
@@ -321,11 +359,11 @@ nav {
     flex-wrap: wrap;
     border: solid;
     border-width: 2px; 
-    border-color: grey; 
+    border-color:var(--font-color-background-blue); 
     flex-direction: column; 
     width: 45%;
     flex-shrink: 0;
-    border-radius: 3px;
+    border-radius: 12px;
 }
 
 
@@ -391,13 +429,20 @@ nav {
     box-sizing: none;
     
     color: var(--font-color-background-black);
+    font-weight: bold;
+}
+
+
+.github-link-container {
+    display: flex;
+    justify-content: center;
 }
 
 
 /*-----------------------------------------------------Contact me section styles----------------------------------------------------------------*/
 
 .contact {
-    background-color: var(--font-color-background-blue);; 
+    background-color: var(--backgroun-primary);; 
     padding-left: 10%; 
     padding-right:10% ;
     padding-bottom: 10%;
@@ -410,16 +455,15 @@ nav {
     justify-content: space-around;
     padding-left: 10%;
     padding-right: 10%;
+    row-gap: 30px;
 }
 
 .my-contacts{
     display: flex; 
     flex-direction: column; 
-    row-gap: 30px;
-}
+    align-items: center;
 
-.my-contacts p {
-    color: var(--font-color-background-black);
+    row-gap: 30px;
 }
 
 
@@ -443,30 +487,31 @@ nav {
     
 }
 
-.form-element label {
-    color: var(--font-color-background-black);
-}
 
 
 .contact_email, .contact_name, .contact_message {
     border-radius: 5px;
     border: none;
     font-size: var(--paragraph-font-normal);
-    color: var(--font-color-background-black);
     padding: 10px 20px;
-    
+    background-color: var(--backgroun-secondary);
 }
 
 .contact_submit {
     padding: 15px 20px;
     font-size: var(--font-color-background-black);
-    color: var(--font-color-background-grey);
+    color: var(--font-color-background-black);
     width: fit-content;
     margin: 0 auto;
-    background-color: var(--font-color-background-black);
+    background-color: var(--font-color-background-blue);
     border: none;
     border-radius: 5px;
+    font-weight: bold;
     
+}
+
+.contact_submit:hover{
+    opacity: 0.6;
 }
 
 
@@ -504,7 +549,7 @@ nav {
         width: 100%;
         top: 35px;
         padding-left: 10px;
-        background-color:  var(--font-color-background-black);
+        background-color:  var(--backgroun-secondary);
         transform: translateY(0);
         opacity: 1;
         column-gap: 2px;
@@ -514,7 +559,7 @@ nav {
         position: absolute;
         display: flex;
         justify-content: space-between;
-        background-color: var(--font-color-background-black);
+        background-color: var(--backgroun-secondary);
         width: 100%;
         height: 35px;
         min-width: 256px;
