@@ -2,8 +2,7 @@
 
     /*Fonts sizes*/
     --paragraph-font-normal : 1.125rem ;
-    --heading-font-inner : 25px;
-    --heading-font-small : 25px;
+    --heading-font-inner : 1.563rem;
     --heading-font: 2.813rem;
 
     /*Font colors*/
@@ -319,7 +318,6 @@ nav {
 }
 .skill-name {
     font-size: var(--paragraph-font-normal);
-    /* color: var(--font-color-background-black); */
 }
 
 
@@ -499,7 +497,7 @@ nav {
 
 .contact_submit {
     padding: 15px 20px;
-    font-size: var(--font-color-background-black);
+    font-size: var(--paragraph-font-normal);
     color: var(--font-color-background-black);
     width: fit-content;
     margin: 0 auto;
@@ -603,9 +601,3 @@ nav {
     }
 }
 
-
-@media screen and (max-width: 430px){
-    .contacts-heading{
-        font-size: var(--heading-font-small);
-    }
-}
