@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bulelani Gabonewe's Portfolio</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+    <link rel="manifest" href="icons/site.webmanifest">
 
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
 </head>
@@ -48,6 +52,13 @@
             </div>
 
         </div>
+        <div class="social-links">
+            <a href="https://github.com/gaboneweb" target="_blank"><img class="link-icons" src="icons/github-logo.png"></a>
+            <a href="https://www.linkedin.com/in/bulelani-gabonewe-267b9426b" target="_blank"><img class="link-icons" src="icons/linkedin.png"></a>
+        </div>
+        <div class="nav-buttons">
+            <button class="proj-button"><a class="project-link" href="#projects">Projects</a></button>
+        </div>
     </section>  
 
 
@@ -67,7 +78,7 @@
 
                 <br>
                 <p  class="text">In terms of technical skills, I'm proficient in both Python and Java, having applied them to various projects 
-                    while at WeThinkCode_. I'm well-versed in Git, Test-Driven Development (TDD), and setting up Continuous Integration/Continuous Deployment (CI/CD) pipelines.
+                    while at WeThinkCode_. I'm well-versed in Git, Test-Driven Development (TDD), and setting up Continuous Integration pipelines.
                 </p>
 
 
@@ -82,7 +93,12 @@
                 <p  class="text">
                     As I look forward to graduating, I'm excited to apply my skills to real-world challenges and contribute to the dynamic field of software development!
                 </p>
-                    
+
+
+                <br>
+                <div class="nav-buttons">
+                    <button class="proj-button"><a class="project-link" href="#contact">Contact Me</a></button>
+                </div>   
                 
             </div>
 
@@ -119,13 +135,8 @@
                         <img src="images/sql.png" class="skill-logo" >
                         <h3 class="skill-name">SQL</h3>
                     </div> 
-        
-                    <div class="skill">
-                        <img src="images/java-script.png" class="skill-logo" >
-                        <h3 class="skill-name">JavaScript&#x28;Beginner &#x29;</h3>
-                    </div> 
-        
 
+        
         
                     <div class="skill">
                         <img src="images/programming.png" class="skill-logo" >
@@ -150,6 +161,11 @@
                     <div class="skill">
                         <img src="images/safety-icon.png" class="skill-logo">
                         <h3 class="skill-name">Test Driven Development&#x28;TDD &#x29;</h3>
+                    </div> 
+
+                    <div class="skill">
+                        <img src="images/continuous-integration.jpg" class="skill-logo">
+                        <h3 class="skill-name">Continuous Integration</h3>
                     </div> 
         
                     <div class="skill">
@@ -180,11 +196,10 @@
                         <li> &#9702; Game is build using Java and Java Swing</li>
                         <li> &#9702; A project I built to learn OOP concepts.
                     </ul>
-                    
-                    <button class="project-link-button">
-                        <a class="project-github-link" href="https://github.com/gaboneweb/space-invaders" target="_blank">GitHub Link</a>
-                    </button>
                    
+                </div>
+                <div class="github-link-container">
+                    <a href="https://github.com/gaboneweb/space-invaders" target="_blank"><img class="link-icons" src="icons/github-logo.png" style="margin: 0 auto;"></a>
                 </div>
             </div>
 
@@ -205,9 +220,9 @@
                         <li> &#9702; The server is able to connect to multiple clients.</li>
                         <li> &#9702; A project I built to learn how Threads and Java netwroking
                     </ul>
-                    <button class="project-link-button" >
-                        <a class="project-github-link" href="https://github.com/gaboneweb/John-Cricket-Coding-Challenge-24---Realtime-Chat-Client-and-Server" target="_blank">GitHub Link</a>
-                    </button>
+                </div>
+                <div class="github-link-container">
+                    <a href="https://github.com/gaboneweb/John-Cricket-Coding-Challenge-24---Realtime-Chat-Client-and-Server" target="_blank"><img class="link-icons" src="icons/github-logo.png"></a>
                 </div>
             </div>
 
@@ -217,9 +232,11 @@
 
  
     <section id="contact" class="contact">
+            
             <div class="contact-content">
+                <h2 class="heading">Contact Me</h2>
                 <div class="my-contacts">
-                    <h3 class="heading contacts-heading">My Contact Details</h3>
+                    <h3 class="inner-heading contacts-heading">My Contact Details</h3>
                     <div style="display: flex; align-items: center;">
                         <img src="images/call.png" style="width: 35px;">
                         <p> &nbsp; &nbsp;0825892233</p>
@@ -228,9 +245,13 @@
                         <img src="images/email.png" style="width: 35px;">
                         <p> &nbsp; &nbsp;bulelanigabonewe@gmail.com</p>
                     </div>
+                    <div class="social-links">
+                        <a href="https://github.com/gaboneweb" target="_blank"><img class="link-icons" src="icons/github-logo.png"></a>
+                        <a href="https://www.linkedin.com/in/bulelani-gabonewe-267b9426b" target="_blank"><img class="link-icons" src="icons/linkedin.png"></a>
+                    </div>
                 </div>
                 <div class="contact-me-container">
-                    <h3 class="heading contacts-heading">Send me a message</h3>
+                    <h3 class="inner-heading contacts-heading">Send me a message</h3>
                     <form class="contact-form">
                         <div class="name_container form-element">
                             <label for="contact_name">Name</label>
@@ -247,6 +268,7 @@
                         <input type="submit" id="contact_submit" name="contact_submit" class="contact_submit"  onclick="submitForm()">
                     </form>
                 </div>
+
 
             </div>
 
