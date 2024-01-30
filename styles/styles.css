@@ -37,6 +37,7 @@ html{
 section {
     padding-top :135px;
     width: 100vw;
+    padding-right: ;
 }
 
 
@@ -328,6 +329,64 @@ nav {
     object-position: center;
 }
 
+/*--------------------------------------------Education section styles-------------------------------------*/
+
+.education {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10%;
+    padding-right: 10%;
+    row-gap: 20px;
+}
+
+.education-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.qualification{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+    color: #0B0C10;
+    border: solid;
+    border-color: var(--font-color-background-blue);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.qualification-title {
+    text-decoration: underline;
+    color: #0B0C10;
+    background-color: var(--font-color-background-blue);
+    width: 100%;
+}
+
+
+.qualification-image {
+    width: 100%;
+    height: 390px;
+    object-fit: cover;
+    object-position: center;
+    
+}
+.qualification-info {
+    width: 100%;
+}
+
+.qualification-table {
+    border: solid;
+    border-color: var(--font-color-background-blue);
+    margin: 0 auto;
+    width: 100%;
+}
+
+.qualification-table tr td{
+    border: solid;
+    border-color: var(--font-color-background-blue);
+    padding: 10px;
+}
 /*--------------------------------------------Project section styles----------------------------------------------------------*/
 .projects-heading{
     color: var(--font-color-background-blue);
@@ -459,8 +518,6 @@ nav {
 .my-contacts{
     display: flex; 
     flex-direction: column; 
-    align-items: center;
-
     row-gap: 30px;
 }
 
@@ -580,8 +637,19 @@ nav {
     .my-skills-section {
         width: 100%;
     }
+    /*--------------------------Education section query styles----------------------*/
+    .education-content{
+        flex-direction: column;
+        row-gap: 20px;
 
+    }
+    .qualification {
+        width: 100%;
+    }
 
+    .qualification-image {
+        object-fit: fill;
+    }
     /*--------------------------Project section media query styles---------------------------------------------------*/
     .project-content{
         flex-direction: column;
