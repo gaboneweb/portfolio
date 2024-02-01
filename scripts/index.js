@@ -1,10 +1,10 @@
 const navToggle = () => {
     const menu = document.querySelector('.button-toogler');
-    const nav = document.querySelector('.navbar-links-dropdown');
+    const nav = document.querySelector('.navbar-links');
     
 
     menu.addEventListener('click', () => {
-        nav.classList.toggle('navbar-links-dropdown-active');
+        nav.classList.toggle('active');
     });
 
 }
