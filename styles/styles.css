@@ -290,6 +290,11 @@ nav {
 
 }
 
+.vegeta-qoute{
+    font-style: italic;
+    opacity: 0.7;
+}
+
 .my-skills-section {
     display: flex;
     flex-direction: column;
